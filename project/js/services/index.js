@@ -31,6 +31,16 @@ try {
     } else {
     tarotResult.innerHTML = '<p>No se encontraron cartas disponibles.</p>';
     }
+
+    // Ocultamos la "initial_box" y mostramos el "retryBox"
+      const initialBox = document.querySelector('.initial_box');
+      const retryBox = document.getElementById('retryBox');
+      if (initialBox) {
+          initialBox.style.display = 'none';
+      }
+      if (retryBox) {
+          retryBox.style.display = 'block';
+      }
 } catch (error) {
     console.error('Error al obtener la lectura de tarot:', error);
     const tarotResult = document.getElementById('tarotResult');
@@ -44,6 +54,7 @@ function getRandomCards(cards, numberOfCards) {
   return shuffledCards.slice(0, numberOfCards);  
 }
 
+
 // Asegúrate de que el DOM esté completamente cargado
 document.addEventListener('DOMContentLoaded', () => {
   // Verificamos si el botón existe
@@ -54,4 +65,25 @@ if (button) {
 } else {
     console.log("No se encontró el botón con id 'getReadingButton'.");
 }
+
+    // Agregamos funcionalidad al botón de "Nueva Consulta al Tarot"
+    const retryButton = document.getElementById('retryButton');
+    if (retryButton) {
+        retryButton.addEventListener('click', () => {
+            // Reiniciamos el estado de las cajas
+            const initialBox = document.querySelector('.initial_box');
+            const retryBox = document.getElementById('retryBox');
+            const tarotResult = document.getElementById('tarotResult');
+
+            if (initialBox) {
+                initialBox.style.display = 'block'; // Mostramos la caja inicial
+            }
+            if (retryBox) {
+                retryBox.style.display = 'none'; // Ocultamos la caja de reinicio
+            }
+            if (tarotResult) {
+                tarotResult.innerHTML = ''; // Limpiamos los resultados previos
+            }
+        });
+    }
 });
