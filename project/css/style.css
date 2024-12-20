@@ -70,9 +70,9 @@ button {
   border-bottom: 1px solid #ddd;
 }
 .card p {
-  padding: 30px;
+  padding: 1rem;
   font-size: 14px;
-  color: #333;
+  color: #ffffff;
 }
 
 #tarotResult {
