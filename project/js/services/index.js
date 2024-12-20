@@ -54,6 +54,7 @@ function getRandomCards(cards, numberOfCards) {
   return shuffledCards.slice(0, numberOfCards);  
 }
 
+
 // Asegúrate de que el DOM esté completamente cargado
 document.addEventListener('DOMContentLoaded', () => {
   // Verificamos si el botón existe
