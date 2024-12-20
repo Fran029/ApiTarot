@@ -1,46 +1,46 @@
 //Estilo para el cuerpo 
+html 
+    height: 100%
+
 body 
+    height: 100%
     font-family: 'Arial', sans-serif
-    background-color: white
+    background: url(/project/assets/img/fondo_2.jpg)
+    background-size: cover
+    background-repeat: no-repeat
     margin: 0
     padding: 0
-    display: flex
-    justify-content: center
-    align-items: center
-    height: 100vh
 
 
-  
+
 .container 
+    color: white
     text-align: center
     padding: 20px
     border-radius: 10px
-    background-color: #fff
-    box-shadow: 0 4px 8px rgba(22, 5, 39, 0.1)
     width: 100%
-    max-width: 600px
-
 
 //Estilo del botón 
 button 
     padding: 10px 20px
-    color: white
+    color: purple
     border: none
     border-radius: 5px
     font-size: 16px
     cursor: pointer
-    transition: background-color 0.3s
+    background-color purple
 
     &:hover 
             background-color: purple
+            color: white
     
 
 
 //Contenedor de las cartas 
 .tarot-cards 
     display: flex
+    flex-direction: row
     justify-content: space-between
-    flex-wrap: wrap
     margin-top: 220px
 
 
@@ -75,9 +75,9 @@ button
 // Contenedor de las cartas en #tarotResult 
 #tarotResult 
     display: flex
+    flex-direction: row
     justify-content: center
     align-items: flex-start
-    flex-wrap: wrap
     gap: 20px
     margin-top: 20px
     width: 100%
