@@ -23,8 +23,12 @@ try {
         // Verificamos que la carta tenga una imagen
         const cardImage = card.image || 'https://via.placeholder.com/150';  
         cardElement.innerHTML = `
+        <div class="img_box">
         <img src="${cardImage}" alt="${card.name}" class="card-image">
-        <p><strong>${card.name}</strong>: ${card.meaning_up}</p>
+        </div>
+        <div class="card-body">
+        <p><strong style="color: #ffb454;" >${card.name}</strong>: ${card.meaning_up}</p>
+        </div>
         `;
         tarotResult.appendChild(cardElement);
     });

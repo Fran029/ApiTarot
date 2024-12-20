@@ -63,22 +63,28 @@ button
     overflow: hidden
     box-shadow: 10px 4px 6px rgba(35, 9, 9, 0.1)
     display: flex
+    flex-direction: column
     justify-content: center
     align-items: center
     text-align: center
+    padding: 1rem 1rem
+
 
     // Estilo para la imagen de la carta 
-    img 
-     max-width: 60%
+    img
+     margin-top:1rem
      border-bottom: 1px solid #ddd
+     height: 350px 
     
 
     // Estilo para el texto debajo de la carta 
     p
-     padding: 1rem
      font-size: 14px
      color: #ffffff
     
+.card-body 
+    flex: auto
+    min-height: 200px
 
 
 // Contenedor de las cartas en #tarotResult 
