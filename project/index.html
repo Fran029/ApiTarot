@@ -7,16 +7,69 @@
     <title>Tarot</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
+
+    <header>
+        <h1>Bienvenido al Tarot Mágico</h1>
+    </header> 
+
+    <section id="que-es-el-tarot">
+        <h1>¿Qué es el Tarot?</h1>
+        <p>
+        El Tarot es una puerta hacia el mundo de lo mágico y lo espiritual, una herramienta ancestral que conecta lo visible con lo invisible. Este mágico sistema de cartas, compuesto por símbolos y arquetipos universales, te invita a explorar los misterios de tu vida y a recibir mensajes cargados de sabiduría. Desde su origen en el siglo XV, el Tarot ha acompañado a quienes buscan reflexionar sobre su pasado, comprender su presente y vislumbrar las posibilidades de su futuro.
+        </p>
+    </section>
+    
+    <section id="como-funciona">
+        <h2>¿Cómo funciona el Tarot?</h2>
+        <p>El Tarot consta de 78 cartas divididas en dos grandes grupos:</p>
+        <ul>
+        <li>
+            <strong>Arcanos Mayores:</strong> Estas 22 cartas representan las lecciones más profundas de la vida, como "El Loco", que simboliza nuevos comienzos, o "La Fuerza", que evoca coraje y determinación.
+        </li>
+        <li>
+            <strong>Arcanos Menores:</strong> Estas 56 cartas reflejan los detalles de la vida cotidiana, desde las emociones más intensas hasta las decisiones prácticas. Se dividen en cuatro palos: Bastos, Copas, Espadas y Oros, cada uno con su propia energía.
+        </li>
+        </ul>
+        <p>
+        Cuando realizas una lectura de Tarot, las cartas se barajan y seleccionan de manera intuitiva, permitiendo que las energías del momento guíen la elección. Cada carta cuenta una historia, y juntas forman un mapa que te ayuda a comprender tus retos y tus posibilidades.
+        </p>
+    </section>
+    
+
+    <section id="beneficios">
+        <h2>¿Por qué probar una lectura de Tarot?</h2>
+        <p>El Tarot no solo es una herramienta para la reflexión, también es un puente hacia la magia. Una lectura puede ayudarte a:</p>
+        <ul>
+            <li><strong>Encontrar claridad:</strong> Ilumina caminos ocultos en momentos de duda.</li>
+            <li><strong>Conectar con tu intuición:</strong> Las cartas despiertan tu sabiduría interna.</li>
+            <li><strong>Explorar temas específicos:</strong> Amor, salud, finanzas y más.</li>
+            <li><strong>Disfrutar de un momento mágico:</strong> Descubre lo que el universo tiene para ti.</li>
+        </ul>
+    </section>
+    
+    <section id="invitacion">
+        <h2>Descubre el mensaje del Tarot</h2>
+        <p>
+            Realiza una lectura de tres cartas o consulta sobre temas específicos como el amor, la salud o las finanzas. 
+            Conéctate con lo mágico y descubre qué mensaje tiene para ti el universo.
+        </p>
+        <div class="cta">
+            <a href="#" id="getReadingButton">Prueba tu lectura de Tarot ahora</a>
+        </div>
+    </section>
+
+    <!-- Contenedor principal para las cartas -->
     <main>
         <div class="container">
-            <h1>Prueba tu suerte de hoy</h1>
-            <button id="getReadingButton">Obtener Lectura</button>
+            <h2>Tus cartas seleccionadas</h2>
             <div id="tarotResult" class="tarot-cards">
-    <!-- Las cartas aparecerán aquí -->
+                <!-- Las cartas aparecerán aquí -->
             </div>
         </div>
     </main>
+    
     <footer> </footer>
     
     <script type="module" src="./js/services/index.js"></script> 

@@ -3,11 +3,13 @@ body
     font-family: 'Arial', sans-serif
     background-color: white
     margin: 0
-    padding: 0
+    padding: 1rem
     display: flex
     justify-content: center
     align-items: center
     height: 100vh
+    flex-direction: column
+    align-items: stretch
 
 
   
@@ -81,4 +83,186 @@ button
     gap: 20px
     margin-top: 20px
     width: 100%
+
+// Variables para colores y tipografías
+$primary-color: #6a1b9a
+$secondary-color: #f3e5f5
+$text-color: #333
+$font-family: 'Arial', sans-serif
+
+// Mixins para reutilizar estilos
+@mixin flex-center 
+  display: flex
+  justify-content: center
+  align-items: center
+
+
+@mixin responsive($breakpoint) 
+  @media (max-width: $breakpoint) 
+    @content
+  
+
+
+// Estilos generales
+
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+
+body 
+  font-family: $font-family
+  color: $text-color
+  background-color: $secondary-color
+  line-height: 1.6
+
+
+a 
+  text-decoration: none
+  color: $primary-color
+
+  &:hover 
+    color: darken($primary-color, 10%)
+  
+
+
+// Header
+header 
+  width:100
+  background-color: $primary-color
+  color: white
+  padding: 10px
+  text-align: center
+  position: relative
+  z-index: 10
+
+  h1 
+    font-size: 2rem
+  
+
+
+// Sección: ¿Qué es el Tarot?
+#que-es-el-tarot 
+  padding: 2rem
+  background-color: lighten($primary-color, 50%)
+
+  h1 
+    font-size: 1.8rem
+    margin-bottom: 1rem
+  
+
+  p 
+    font-size: 1rem
+    line-height: 1.8
+  
+
+
+// Sección: ¿Cómo funciona el Tarot?
+section[id="como-funciona"] 
+  padding: 1rem
+  
+
+  h2 
+    font-size: 1.6rem
+    margin-bottom: 1rem
+  
+
+  p 
+    font-size: 1rem
+    margin-bottom: 1rem
+  
+
+  ul 
+    margin-left: 1.5rem
+
+    li 
+      margin-bottom: 0.5rem
+
+      strong 
+        color: $primary-color
+    
+  
+
+
+// Sección: Beneficios
+#beneficios 
+  background-color: white
+  padding: 2rem
+
+  h2 
+    font-size: 1.6rem
+    margin-bottom: 1rem
+  
+
+  ul 
+    margin-left: 1.5rem
+
+    li 
+      margin-bottom: 0.5rem
+
+      strong 
+        color: darken($primary-color, 15%)
+      
+    
+  
+
+
+// Sección: Invitación
+#invitacion 
+  background-color: lighten($primary-color, 30%)
+  color: white
+  text-align: center
+  padding: 2rem
+
+  h2 
+    font-size: 1.8rem
+    margin-bottom: 1rem
+  
+
+  p 
+    font-size: 1rem
+    margin-bottom: 1rem
+  
+
+  .cta 
+    @include flex-center
+    margin-top: 1rem
+
+    a 
+      background-color: $primary-color
+      color: white
+      padding: 0.8rem 1.5rem
+      border-radius: 5px
+      font-size: 1rem
+
+      &:hover 
+        background-color: darken($primary-color, 10%)
+      
+    
+  
+
+
+// Footer
+footer 
+  background-color: $primary-color
+  color: white
+  text-align: center
+  padding: 1rem
+  font-size: 0.9rem
+
+
+// Diseño responsivo
+@include responsive(768px) 
+  header h1,
+  #que-es-el-tarot h1,
+  section[id="como funciona"] h2,
+  #beneficios h2,
+  #invitacion h2 
+    font-size: 1.5rem
+  
+
+  body 
+    padding: 1rem
+  
+
 

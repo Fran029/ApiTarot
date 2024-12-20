@@ -2,11 +2,13 @@ body {
   font-family: "Arial", sans-serif;
   background-color: white;
   margin: 0;
-  padding: 0;
+  padding: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  flex-direction: column;
+  align-items: stretch;
 }
 
 .container {
@@ -70,6 +72,138 @@ button:hover {
   gap: 20px;
   margin-top: 20px;
   width: 100%;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  color: #333;
+  background-color: #f3e5f5;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: #6a1b9a;
+}
+a:hover {
+  color: rgb(76.1325966851, 19.3922651934, 110.6077348066);
+}
+
+header {
+  width: 100;
+  background-color: #6a1b9a;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+header h1 {
+  font-size: 2rem;
+}
+
+#que-es-el-tarot {
+  padding: 2rem;
+  background-color: rgb(224.3370165746, 192.0386740331, 243.9613259669);
+}
+#que-es-el-tarot h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+#que-es-el-tarot p {
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+section[id=como-funciona] {
+  padding: 1rem;
+}
+section[id=como-funciona] h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+section[id=como-funciona] p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+section[id=como-funciona] ul {
+  margin-left: 1.5rem;
+}
+section[id=como-funciona] ul li {
+  margin-bottom: 0.5rem;
+}
+section[id=como-funciona] ul li strong {
+  color: #6a1b9a;
+}
+
+#beneficios {
+  background-color: white;
+  padding: 2rem;
+}
+#beneficios h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+#beneficios ul {
+  margin-left: 1.5rem;
+}
+#beneficios ul li {
+  margin-bottom: 0.5rem;
+}
+#beneficios ul li strong {
+  color: rgb(61.1988950276, 15.5883977901, 88.9116022099);
+}
+
+#invitacion {
+  background-color: rgb(182.0718232044, 105.2541436464, 228.7458563536);
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+#invitacion h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+#invitacion p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+#invitacion .cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+#invitacion .cta a {
+  background-color: #6a1b9a;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+#invitacion .cta a:hover {
+  background-color: rgb(76.1325966851, 19.3922651934, 110.6077348066);
+}
+
+footer {
+  background-color: #6a1b9a;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  header h1,
+  #que-es-el-tarot h1,
+  section[id="como funciona"] h2,
+  #beneficios h2,
+  #invitacion h2 {
+    font-size: 1.5rem;
+  }
+  body {
+    padding: 1rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
