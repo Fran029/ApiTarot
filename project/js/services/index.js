@@ -31,6 +31,11 @@ try {
     } else {
     tarotResult.innerHTML = '<p>No se encontraron cartas disponibles.</p>';
     }
+    // Ocultamos la "initial_box" después de hacer clic
+     const initialBox = document.querySelector('.initial_box');
+        if (initialBox) {
+              initialBox.style.display = 'none';
+        }
 } catch (error) {
     console.error('Error al obtener la lectura de tarot:', error);
     const tarotResult = document.getElementById('tarotResult');

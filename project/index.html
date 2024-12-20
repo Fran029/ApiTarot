@@ -37,8 +37,15 @@
     </nav>
     <main>
         <div class="container">
-            <h1>Prueba tu suerte de hoy</h1>
-            <button id="getReadingButton">Obtener Lectura</button>
+            <div class="initial_box">
+                <h1>Prueba tu suerte de hoy</h1><br>
+                <button id="getReadingButton">
+                    <img src="./assets/img/carta_atras.jpg" alt="Prueba tu suerte">
+                </button>
+            </div>
+            <div id="retryBox" style="display:none;">
+                <button id="retryButton">Volver a intentarlo</button>
+            </div>
             <div id="tarotResult" class="tarot-cards">
     <!-- Las cartas aparecerán aquí -->
             </div>

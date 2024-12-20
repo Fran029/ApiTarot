@@ -5,15 +5,23 @@ html
 body 
     height: 100%
     font-family: 'Arial', sans-serif
-    background: url(/project/assets/img/fondo_2.jpg)
+    background: url(/project/assets/img/fondo_4.jpg)
     background-size: cover
     background-repeat: no-repeat
     margin: 0
     padding: 0
 
+.initial_box
+    margin-top: 3rem
+    background-color: black
+    max-width: 500px
+    padding: 2rem
 
 
 .container 
+    display: flex
+    flex-direction: column
+    align-items: center
     color: white
     text-align: center
     padding: 20px
@@ -22,18 +30,9 @@ body
 
 //Estilo del botón 
 button 
-    padding: 10px 20px
-    color: purple
-    border: none
-    border-radius: 5px
-    font-size: 16px
     cursor: pointer
-    background-color purple
-
-    &:hover 
-            background-color: purple
-            color: white
-    
+    background-color: transparent
+    border: transparent
 
 
 //Contenedor de las cartas 
@@ -47,7 +46,7 @@ button
 // Estilo de la carta 
 .card 
     width: 350px
-    height: 250px
+    height: 450px
     margin: 20px
     border-radius: 10px
     background-color: white
