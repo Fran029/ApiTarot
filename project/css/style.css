@@ -148,7 +148,7 @@ header h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 8rem 2rem 4rem 2rem;
+  padding: 6rem 2rem 4rem 2rem;
   background-color: white;
 }
 
@@ -164,6 +164,7 @@ header h1 {
 }
 
 section[id=como-funciona] {
+  background-color: white;
   padding: 1rem;
 }
 section[id=como-funciona] h2 {
@@ -181,16 +182,18 @@ section[id=como-funciona] ul li {
   margin-bottom: 0.5rem;
 }
 section[id=como-funciona] ul li strong {
-  color: #191631;
+  color: #ffb454;
 }
 
 #beneficios {
-  background-color: white;
+  background-color: #191631;
+  color: white;
   padding: 2rem;
 }
 #beneficios h2 {
   font-size: 1.6rem;
   margin-bottom: 1rem;
+  color: #ffb454;
 }
 #beneficios ul {
   margin-left: 1.5rem;
@@ -199,7 +202,7 @@ section[id=como-funciona] ul li strong {
   margin-bottom: 0.5rem;
 }
 #beneficios ul li strong {
-  color: black;
+  color: #ffb454;
 }
 
 #invitacion {
