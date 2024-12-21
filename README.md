@@ -1,6 +1,6 @@
 <a name="readme-top"></a>
 
-# Name Repository 
+#Tarot 
 
 > https://github.com/Fran029/ApiTarot
 
