@@ -7,17 +7,40 @@ body {
   font-family: "Arial", sans-serif;
   background: url(/project/assets/img/fondo_4.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
   margin: 0;
-  padding: 1rem;
+  padding: o;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar-dark {
+  background-color: #191631;
+}
+
+.nav-item a {
+  color: #ffb454 !important;
+}
+
+.initial_box {
+  margin-top: 3rem;
+  background-color: black;
+  max-width: 500px;
+  padding: 2rem;
+  border-radius: 10px;
+  border: 1px solid #ffb454;
+}
+
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   flex-direction: column;
   align-items: stretch;
   padding: 0;
-  
 }
 
 .navbar-dark {
@@ -102,15 +125,15 @@ body {
 
 a {
   text-decoration: none;
-  color: #6a1b9a;
+  color: #191631;
 }
 a:hover {
-  color: rgb(76.1325966851, 19.3922651934, 110.6077348066);
+  color: rgb(7.0422535211, 6.1971830986, 13.8028169014);
 }
 
 header {
   width: 100;
-  background-color: #6a1b9a;
+  background-color: #191631;
   color: white;
   padding: 10px;
   text-align: center;
@@ -121,17 +144,23 @@ header h1 {
   font-size: 2rem;
 }
 
-#que-es-el-tarot {
-  padding: 2rem;
-  background-color: rgb(224.3370165746, 192.0386740331, 243.9613259669);
+.que-es-el-tarot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8rem 2rem 4rem 2rem;
+  background-color: white;
 }
+
 #que-es-el-tarot h1 {
-  font-size: 1.8rem;
   margin-bottom: 1rem;
+  color: #ffb454;
 }
 #que-es-el-tarot p {
   font-size: 1rem;
   line-height: 1.8;
+  margin-bottom: 0;
+  color: #191631;
 }
 
 section[id=como-funciona] {
@@ -152,7 +181,7 @@ section[id=como-funciona] ul li {
   margin-bottom: 0.5rem;
 }
 section[id=como-funciona] ul li strong {
-  color: #6a1b9a;
+  color: #191631;
 }
 
 #beneficios {
@@ -170,22 +199,28 @@ section[id=como-funciona] ul li strong {
   margin-bottom: 0.5rem;
 }
 #beneficios ul li strong {
-  color: rgb(61.1988950276, 15.5883977901, 88.9116022099);
+  color: black;
 }
 
 #invitacion {
-  background-color: rgb(182.0718232044, 105.2541436464, 228.7458563536);
+  background-color: #191631;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: white;
   text-align: center;
+  width: 100%;
   padding: 2rem;
 }
 #invitacion h2 {
-  font-size: 1.8rem;
+  font-weight: bold;
   margin-bottom: 1rem;
+  color: #ffb454;
 }
 #invitacion p {
   font-size: 1rem;
   margin-bottom: 1rem;
+  color: #ffb454;
 }
 #invitacion .cta {
   display: flex;
@@ -194,18 +229,18 @@ section[id=como-funciona] ul li strong {
   margin-top: 1rem;
 }
 #invitacion .cta a {
-  background-color: #6a1b9a;
+  background-color: #191631;
   color: white;
   padding: 0.8rem 1.5rem;
   border-radius: 5px;
   font-size: 1rem;
 }
-#invitacion .cta a:hover {
-  background-color: rgb(76.1325966851, 19.3922651934, 110.6077348066);
-}
 
+.invitacion_box {
+  width: 80%;
+}
 footer {
-  background-color: #6a1b9a;
+  background-color: #191631;
   color: white;
   text-align: center;
   padding: 1rem;
@@ -222,6 +257,8 @@ footer {
   }
   body {
     padding: 1rem;
+  }
+}
 #retryBox button {
   background-color: #191631;
   color: #ffb454;
@@ -230,6 +267,14 @@ footer {
   font-size: 26px;
   padding: 1rem 5rem;
   margin-top: 3rem;
+}
+
+footer {
+  background-color: #191631;
+  color: #ffb454;
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
 }
 
 @media (max-width: 991.98px) {

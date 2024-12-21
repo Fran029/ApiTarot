@@ -7,9 +7,13 @@ body
     font-family: 'Arial', sans-serif
     background: url(/project/assets/img/fondo_4.jpg)
     background-size: cover
-    background-repeat: no-repeat
     margin: 0
-    padding: 1rem
+    padding: o
+
+.navbar
+    position: fixed
+    width: 100%
+    z-index: 1000
 
 .navbar-dark
     background-color: #191631
@@ -32,7 +36,6 @@ body
     display: flex
     justify-content: center
     align-items: center
-    height: 100vh
     flex-direction: column
     align-items: stretch
 
@@ -43,8 +46,6 @@ body
 
 .nav-item a
     color: #ffb454 !important
-
-
 
 .initial_box
     margin-top: 3rem
@@ -118,7 +119,7 @@ button
     width: 100%
 
 // Variables para colores y tipografías
-$primary-color: #6a1b9a
+$primary-color: #191631
 $secondary-color: #f3e5f5
 $text-color: #333
 $font-family: 'Arial', sans-serif
@@ -175,18 +176,25 @@ header
 
 
 // Sección: ¿Qué es el Tarot?
-#que-es-el-tarot 
-  padding: 2rem
-  background-color: lighten($primary-color, 50%)
 
+.que-es-el-tarot
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding: 8rem 2rem 4rem 2rem
+  background-color: white
+
+#que-es-el-tarot 
   h1 
-    font-size: 1.8rem
     margin-bottom: 1rem
+    color: #ffb454
   
 
   p 
     font-size: 1rem
     line-height: 1.8
+    margin-bottom: 0
+    color: #191631
   
 
 
@@ -237,24 +245,27 @@ section[id="como-funciona"]
         color: darken($primary-color, 15%)
       
     
-  
-
 
 // Sección: Invitación
-#invitacion 
-  background-color: lighten($primary-color, 30%)
+#invitacion
+  background-color:#191631
+  display: flex
+  flex-direction: column
+  align-items: center
   color: white
   text-align: center
+  width:100%
   padding: 2rem
 
   h2 
-    font-size: 1.8rem
+    font-weight: bold
     margin-bottom: 1rem
+    color: #ffb454
   
-
   p 
     font-size: 1rem
     margin-bottom: 1rem
+    color: #ffb454
   
 
   .cta 
@@ -268,11 +279,9 @@ section[id="como-funciona"]
       border-radius: 5px
       font-size: 1rem
 
-      &:hover 
-        background-color: darken($primary-color, 10%)
-      
-    
-  
+.invitacion_box
+  width: 80%
+  background-color:white
 
 
 // Footer
@@ -307,6 +316,14 @@ footer
   font-size: 26px
   padding: 1rem 5rem
   margin-top: 3rem
+
+//footer
+footer
+  background-color: #191631
+  color: #ffb454
+  width:100%
+  padding: 1rem
+  text-align: center
 
   
 @media (max-width: 991.98px) 
