@@ -1,0 +1,293 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  font-family: "Arial", sans-serif;
+  background: url(/project/assets/img/fondo_4.jpg);
+  background-size: cover;
+  margin: 0;
+  padding: o;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar-dark {
+  background-color: #191631;
+}
+
+.nav-item a {
+  color: #ffb454 !important;
+}
+
+.initial_box {
+  margin-top: 3rem;
+  background-color: black;
+  max-width: 500px;
+  padding: 2rem;
+  border-radius: 10px;
+  border: 1px solid #ffb454;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 0;
+}
+
+.navbar-dark {
+  background-color: #191631;
+}
+
+.nav-item a {
+  color: #ffb454 !important;
+}
+
+.initial_box {
+  margin-top: 3rem;
+  background-color: black;
+  max-width: 500px;
+  padding: 2rem;
+  border-radius: 10px;
+  border: 1px solid #ffb454;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffb454;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  border: transparent;
+}
+
+.tarot-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 220px;
+}
+
+.card {
+  width: 350px;
+  padding: 2rem 0rem;
+  border-radius: 10px;
+  background-color: #3a384d;
+  overflow: hidden;
+  box-shadow: 10px 4px 6px rgba(35, 9, 9, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.card img {
+  max-width: 60%;
+  border-bottom: 1px solid #ddd;
+}
+.card p {
+  padding: 1rem;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+#tarotResult {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  color: #333;
+  background-color: #f3e5f5;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: #191631;
+}
+a:hover {
+  color: rgb(7.0422535211, 6.1971830986, 13.8028169014);
+}
+
+header {
+  width: 100;
+  background-color: #191631;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+header h1 {
+  font-size: 2rem;
+}
+
+.que-es-el-tarot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6rem 2rem 4rem 2rem;
+  background-color: white;
+}
+
+#que-es-el-tarot h1 {
+  margin-bottom: 1rem;
+  color: #ffb454;
+}
+#que-es-el-tarot p {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 0;
+  color: #191631;
+}
+
+section[id=como-funciona] {
+  background-color: white;
+  padding: 1rem;
+}
+section[id=como-funciona] h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+section[id=como-funciona] p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+section[id=como-funciona] ul {
+  margin-left: 1.5rem;
+}
+section[id=como-funciona] ul li {
+  margin-bottom: 0.5rem;
+}
+section[id=como-funciona] ul li strong {
+  color: #ffb454;
+}
+
+#beneficios {
+  background-color: #191631;
+  color: white;
+  padding: 2rem;
+}
+#beneficios h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: #ffb454;
+}
+#beneficios ul {
+  margin-left: 1.5rem;
+}
+#beneficios ul li {
+  margin-bottom: 0.5rem;
+}
+#beneficios ul li strong {
+  color: #ffb454;
+}
+
+#invitacion {
+  background-color: #191631;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  text-align: center;
+  width: 100%;
+  padding: 2rem;
+}
+#invitacion h2 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #ffb454;
+}
+#invitacion p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #ffb454;
+}
+#invitacion .cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+#invitacion .cta a {
+  background-color: #191631;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.invitacion_box {
+  width: 80%;
+}
+footer {
+  background-color: #191631;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  header h1,
+  #que-es-el-tarot h1,
+  section[id="como funciona"] h2,
+  #beneficios h2,
+  #invitacion h2 {
+    font-size: 1.5rem;
+  }
+  body {
+    padding: 1rem;
+  }
+}
+#retryBox button {
+  background-color: #191631;
+  color: #ffb454;
+  border: 1px solid #ffb454;
+  border-radius: 10px;
+  font-size: 26px;
+  padding: 1rem 5rem;
+  margin-top: 3rem;
+}
+
+footer {
+  background-color: #191631;
+  color: #ffb454;
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+}
+
+@media (max-width: 991.98px) {
+  body {
+    background-repeat: repeat;
+  }
+  #tarotResult {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
