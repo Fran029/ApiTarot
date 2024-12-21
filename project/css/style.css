@@ -5,7 +5,7 @@ html {
 body {
   height: 100%;
   font-family: "Arial", sans-serif;
-  background: url(/project/assets/img/fondo_4.jpg);
+  background: url(ApiTarot/project/assets/img/fondo_4.jpg);
   background-size: cover;
   margin: 0;
   padding: o;
